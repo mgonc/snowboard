@@ -111,8 +111,7 @@
 
   function headersMap(action) {
     return sample(action)
-      .headers.filter(header => header.name != "Authorization")
-      .map(header => {
+      .headers.map(header => {
         return {
           used: true,
           required: false,
